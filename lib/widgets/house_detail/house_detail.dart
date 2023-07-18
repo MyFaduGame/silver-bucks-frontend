@@ -7,22 +7,26 @@ class HouseDetailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 600,
       child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           // mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              HomeViewStrings().houseDetailTitle,
-              style: themeTitleFonts.copyWith(fontSize: 70),
+            FittedBox(
+              child: Text(
+                HomeViewStrings().houseDetailTitle,
+                style: themeTitleFonts.copyWith(fontSize: 70),
+              ),
             ),
             const SizedBox(
               height: 30,
             ),
-            Text(
-              HomeViewStrings().houseDetailDescription,
-              style: themeDescriptionFonts.copyWith(fontSize: 25),
+            FittedBox(
+              child: Text(
+                HomeViewStrings().houseDetailDescription,
+                style: themeDescriptionFonts.copyWith(fontSize: 25),
+              ),
             )
           ]),
     );

@@ -6,11 +6,13 @@ class CenteredView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    // double height = MediaQuery.of(context).size.height;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 60),
+      padding: EdgeInsets.symmetric(horizontal: width * 1 / 10, vertical: 0),
       alignment: Alignment.topCenter,
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 1200),
+        constraints: BoxConstraints(maxWidth: width),
         child: child,
       ),
     );
