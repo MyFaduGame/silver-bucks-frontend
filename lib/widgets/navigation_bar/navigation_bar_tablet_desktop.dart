@@ -8,7 +8,7 @@ class NavigationBarTabletDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -17,23 +17,40 @@ class NavigationBarTabletDesktop extends StatelessWidget {
             const Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                NavBarItem('Top Houses'),
+                NavBarItem('Home'),
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('Recents'),
+                NavBarItem('About'),
                 SizedBox(
                   width: 60,
                 ),
-                NavBarItem('Favorties'),
+                NavBarItem('Property'),
+                SizedBox(
+                  width: 60,
+                ),
+                NavBarItem('Contact')
               ],
             ),
-            ElevatedButton(
-                onPressed: () => {},
-                style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
-                    backgroundColor: const Color(0xff1C3988)),
-                child: Text(HomeViewStrings().loginRegisterButton))
+            Row(
+              children: <Widget>[
+                ElevatedButton(
+                    onPressed: () => {},
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
+                        backgroundColor: const Color(0xff1C3988)),
+                    child: const Icon(Icons.search)),
+                const SizedBox(
+                  width: 10,
+                ),
+                ElevatedButton(
+                    onPressed: () => {},
+                    style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
+                        backgroundColor: const Color(0xff1C3988)),
+                    child: Text(HomeViewStrings().loginRegisterButton)),
+              ],
+            )
           ]),
     );
   }

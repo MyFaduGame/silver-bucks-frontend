@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:silver_bucks/theme/app_images.dart';
 import 'package:silver_bucks/widgets/centered_view/centered_view.dart';
 import 'package:silver_bucks/widgets/house_detail/house_detail.dart';
+import 'package:silver_bucks/widgets/house_detail/house_image.dart';
 import 'package:silver_bucks/widgets/navigation_bar/navigation_bar.dart';
 
 class HomeView extends StatelessWidget {
@@ -20,12 +20,7 @@ class HomeView extends StatelessWidget {
             ),
             Expanded(
                 child: Row(
-              children: <Widget>[
-                HouseDetailView(),
-                Expanded(
-                  child: Image(image: AssetImage('assets/main_thumbnail.jpg')),
-                )
-              ],
+              children: <Widget>[HouseDetailView(), HouseDetailImage()],
             ))
           ],
         ),

@@ -4,6 +4,7 @@ import 'package:silver_bucks/theme/app_images.dart';
 import 'package:silver_bucks/theme/app_string.dart';
 import 'package:silver_bucks/widgets/navigation_bar/navbar_items.dart';
 import 'package:silver_bucks/widgets/navigation_bar/navbar_logo.dart';
+import 'package:silver_bucks/widgets/navigation_bar/navigation_bar_mobile.dart';
 import 'package:silver_bucks/widgets/navigation_bar/navigation_bar_tablet_desktop.dart';
 
 class NavigatorBar extends StatelessWidget {
@@ -13,6 +14,7 @@ class NavigatorBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       desktop: NavigationBarTabletDesktop(),
+      mobile: NavigationBarMobile(),
     );
   }
 }
