@@ -12,6 +12,8 @@ class HomeBodyTabletMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
         actions: const <Widget>[NavigatorBar()],
       ),
       drawer: const Drawer(
