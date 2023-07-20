@@ -6,20 +6,18 @@ class HamBurgerMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Drawer(
-        child: Column(
-          children: <Widget>[
-            DrawerHeader(
-                child: Column(
-              children: <Widget>[
-                NavBarItem('Home'),
-                NavBarItem('About'),
-                NavBarItem('Property')
-              ],
-            ))
-          ],
-        ),
+    return const Drawer(
+      child: Column(
+        children: <Widget>[
+          DrawerHeader(
+              child: Column(
+            children: <Widget>[
+              NavBarItem('Home'),
+              NavBarItem('About'),
+              NavBarItem('Property')
+            ],
+          ))
+        ],
       ),
     );
   }
