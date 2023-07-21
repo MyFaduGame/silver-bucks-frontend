@@ -43,12 +43,12 @@ class NavigationBarTabletDesktop extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                ElevatedButton(
-                    onPressed: () => {},
-                    style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
-                        backgroundColor: const Color(0xff1C3988)),
-                    child: Text(HomeViewStrings().loginRegisterButton)),
+                // ElevatedButton(
+                //     onPressed: () => {},
+                //     style: ElevatedButton.styleFrom(
+                //         padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
+                //         backgroundColor: const Color(0xff1C3988)),
+                //     child: Text(HomeViewStrings().loginRegisterButton)),
               ],
             )
           ]),

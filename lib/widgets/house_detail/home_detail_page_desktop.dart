@@ -12,18 +12,24 @@ class HomeBodyDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.white,
-      body: CenteredView(
+      body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             NavigatorBar(),
+            Divider(
+              thickness: 2,
+            ),
             SizedBox(
               height: 80,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            Column(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Expanded(child: HouseDetailView()),
-                Expanded(child: HouseDetailImage())
+                HouseDetailImage(),
+                SizedBox(
+                  height: 50,
+                ),
+                HouseDetailView()
               ],
             ),
           ],

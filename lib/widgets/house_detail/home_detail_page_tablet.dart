@@ -21,17 +21,15 @@ class HomeBodyTabletMobile extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       body: const SingleChildScrollView(
-        child: CenteredView(
-          child: Column(
-            // mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              // SizedBox(
-              //   height: 80,
-              // ),
-              HouseDetailImage(),
-              HouseDetailView(),
-            ],
-          ),
+        child: Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            // SizedBox(
+            //   height: 80,
+            // ),
+            HouseDetailImage(),
+            HouseDetailView(),
+          ],
         ),
       ),
     );

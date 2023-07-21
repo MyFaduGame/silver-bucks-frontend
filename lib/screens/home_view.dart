@@ -7,15 +7,37 @@ import 'package:silver_bucks/widgets/house_detail/house_detail.dart';
 import 'package:silver_bucks/widgets/house_detail/house_image.dart';
 import 'package:silver_bucks/widgets/navigation_bar/navigation_bar.dart';
 
-class HomeView extends StatelessWidget {
+// class HomeView extends StatelessWidget {
+//   const HomeView({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: ScreenTypeLayout.builder(
+//         mobile: (BuildContext context) => const HomeBodyTabletMobile(),
+//         desktop: (BuildContext context) => const HomeBodyDesktop(),
+//         tablet: (BuildContext context) => const HomeBodyTabletMobile(),
+//       ),
+//     );
+//   }
+// }
+
+class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
   @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => const HomeBodyTabletMobile(),
-      desktop: (BuildContext context) => const HomeBodyDesktop(),
-      tablet: (BuildContext context) => const HomeBodyTabletMobile(),
+    return Scaffold(
+      body: ScreenTypeLayout.builder(
+        mobile: (BuildContext context) => const HomeBodyTabletMobile(),
+        desktop: (BuildContext context) => const HomeBodyDesktop(),
+        tablet: (BuildContext context) => const HomeBodyTabletMobile(),
+      ),
     );
   }
 }
