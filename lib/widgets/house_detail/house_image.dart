@@ -9,7 +9,7 @@ class HouseDetailImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height * 2;
+    double height = MediaQuery.of(context).size.height;
     return ScreenTypeLayout.builder(
       mobile: (BuildContext context) => CarouselSlider(
         items: [

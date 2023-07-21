@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:silver_bucks/widgets/bottom_navigator_bar/bottom_navigator.dart';
 import 'package:silver_bucks/widgets/centered_view/centered_view.dart';
 import 'package:silver_bucks/widgets/house_detail/house_detail.dart';
 import 'package:silver_bucks/widgets/house_detail/house_image.dart';
@@ -29,9 +30,10 @@ class HomeBodyDesktop extends StatelessWidget {
                 SizedBox(
                   height: 50,
                 ),
-                HouseDetailView()
+                HouseDetailView(),
               ],
             ),
+            BottomNavigatorBar()
           ],
         ),
       ),
