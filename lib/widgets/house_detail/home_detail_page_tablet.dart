@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:silver_bucks/widgets/bottom_navigator_bar/bottom_navigator_bar_tablet_mobile.dart';
 import 'package:silver_bucks/widgets/centered_view/centered_view.dart';
 import 'package:silver_bucks/widgets/hamburger_menu/hamburger_menu.dart';
 import 'package:silver_bucks/widgets/house_detail/house_detail.dart';
@@ -29,6 +30,7 @@ class HomeBodyTabletMobile extends StatelessWidget {
             // ),
             HouseDetailImage(),
             HouseDetailView(),
+            BottomNavigatorBarTabletMobile()
           ],
         ),
       ),
